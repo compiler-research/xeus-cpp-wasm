@@ -1,7 +1,13 @@
 name: xeus-kernel
 channels:
   - https://repo.prefix.dev/emscripten-forge-dev
-  - https://repo.prefix.dev/conda-forge
+  - conda-forge
 dependencies:
-  - xeus-python
-  - ipycanvas
+  - xeus-cpp
+  - symengine
+  - xtensor-blas
+  - xsimd
+  - xwidgets
+  - xcanvas
+  - pip:
+      - ipycanvas==0.11
